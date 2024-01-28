@@ -15,6 +15,7 @@ header {
     padding: 10px; 
     display: flex; 
     align-items: center; 
+    justify-content: space-between;
 }
 
 .titulo {
@@ -39,15 +40,17 @@ button {
 }
 
 .seccion {
-    background-color: #fff;     
-    color: #000;        
-    padding: 30px;      
-    margin: 20px;       
-    border: 2px solid #000;     
-    border-radius: 15px;        
+    background-color: #fff; /* Fondo blanco */
+    color: #000; /* Texto negro */
+    padding: 20px; /* Espaciado interno */
+    margin: 10px; /* Margen exterior */
+    border: 2px solid #000; /* Definición de borde negro */
+    border-radius: 15px; /* Bordes redondos */
+    flex: 1; /* Hace que cada sección ocupe el 100% del alto de su contenedor */
 }
 
-.boton-amallo {
+
+.boton-amarillo {
     background-color: yellow;
     color: #000;
     border: none;
