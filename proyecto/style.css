@@ -1,0 +1,421 @@
+:root {
+    --offblack:#383838;
+    --white:#fdfdfd;
+    --blue: #1e90ff;
+    --width: 1200px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #000;
+    color: var(--white);
+    
+}
+
+.background-poster{
+    width: 102%;
+    height: 102%;
+    position: absolute;
+    top: -1%;
+    left: -1%;
+    background-position: center;
+    background-size: cover;
+    filter: blur(10px) brightness(50%);
+    z-index: -1;
+    background-image: var(--background-url);
+}
+
+.background-page {
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    -webkit-mask-image: linear-gradient(180deg, black 50%, transparent 100%);
+    mask-image: linear-gradient(180deg, black 50%, transparent 100%);
+}
+
+.fade-block{
+    
+        width: 100%; /* Ancho del elemento, ajusta según tus necesidades */
+        height: 100vh; /* Altura del elemento, ajusta según tus necesidades */
+        background-image: url('imagen.jpg'); /* Puedes establecer una imagen de fondo si lo deseas */
+        background-size: cover; /* Ajusta según tus necesidades */
+        position: relative; /* Ajusta según tus necesidades */
+    
+        /* Filtro de desenfoque */
+        backdrop-filter: blur(10px); /* Ajusta el valor según tus necesidades */
+    
+        /* Filtro de desenfoque para navegadores que no admiten backdrop-filter */
+        filter: blur(10px); /* Ajusta el valor según tus necesidades */
+    
+        /* Otras propiedades para centrar el contenido o ajustar el diseño */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white; /* Ajusta según tus necesidades */
+    
+}
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+input:focus,
+button:focus {
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 0 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 50px;
+    position: fixed;
+    background: #000;
+    width: 100%;
+}
+
+.fs-normal{
+    font-size: 24px;
+}
+
+.btn-link{
+    padding: 0;
+}
+
+.nav-logo {
+    width: 50px;
+}
+
+i {
+    color: var(--white);
+}
+
+.vertical-icon-row {
+    display: none;
+}
+
+#listen-now {
+    text-transform: uppercase;
+    background:#50A584;
+    color: var(--white);
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+}
+
+#share {
+    text-transform: uppercase;
+    background:transparent;
+    color: var(--white);
+    font-weight: bold;
+    padding: 8px 18px;
+    border: 2px solid;
+}
+
+.green {
+    color: #50A584;
+}
+
+.stream-icon-row {
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    width: 300px;
+    margin: 25px auto 25px 0;
+}
+
+.monstercat-player {
+    display: flex;
+    align-items: center;
+}
+
+.stream-icon-row li {
+    border: 1px solid;
+    padding: 10px;
+}
+
+.other-releases-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+
+#email {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid gray;
+    color: gray;
+}
+
+#email-btn {
+    background: transparent;
+    border: none;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+
+
+.player {
+    margin-left: 5px;
+}
+
+.artist-column {
+    padding: 25px 0;
+    line-height: 2.5;
+    justify-content: space-between;
+}
+
+.stream-section {
+    padding: 50px 0;
+}
+
+.footer-grid li {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.side-panel {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 375px;
+    height: 100vh;
+    background: #000;
+    color: var(--white);
+    z-index: 99;
+}
+
+.side-panel-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+}
+
+.side-panel-monstercat-span {
+    font-weight: bolder;
+    font-size: 28px;
+}
+
+.side-panel-img-div {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.side-panel img {
+    width: 75px;
+}
+
+.side-panel-links {
+    padding: 50px 40px;
+    height: 325px;
+    line-height: 2.5;
+    overflow-y: scroll;
+    font-size: 24px;
+}
+
+.side-panel-icons-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 100px 100px 100px 20px;
+    align-items: center;
+}
+
+.side-panel-sign-in {
+    border: 2px solid;
+    padding: 5px;
+    margin: 20px;
+    font-size: 28px;
+}
+
+.footer-grid {
+    padding: 20px 0 0;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    margin: 20px;
+}
+
+.footer-flex {
+    padding: 0 20px;
+}
+
+.icons-row {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+.acknowledge-container {
+    font-size: 13px;
+    color: lightgray;
+    padding: 15px;
+    text-align: center;
+}
+
+
+.open {
+    display: block;
+}
+
+.stop-scrolling {
+    overflow: hidden;
+    height: 100vh;
+}
+
+@media(min-width: 1000px){
+
+    nav {
+        position: inherit;
+        background: initial;
+        height: 100px;
+    }
+
+    h1 {
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 10px 0;
+    }
+
+    .nav-logo {
+        position: fixed;
+    }
+
+    .fa-bars {
+        position: fixed;
+        right: 100px;
+    }
+
+    .vertical-icon-row {
+        display: block;
+        position: fixed;
+        top: 100px;
+        right: 90px;
+        line-height: 3;
+    }
+
+    .artist-column {
+        position: relative;
+    }
+
+    .vertical-on-desktop {
+        position: absolute;
+        left: -120%;
+        bottom: 10%;
+        transform: rotate(-90deg);
+        margin-bottom: 20px;
+    }
+
+    .icons-row {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 500px;
+    }
+
+    .stream-icon-row {
+        width: 355px;
+        margin: 50px auto 50px 0;
+    }
+
+    .album-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        width: var(--width);
+        margin: 0 auto; 
+        padding-bottom: 150px;
+        
+    }
+
+    .album-section img {
+        width: 85%; /* Puedes ajustar el valor según tus necesidades */
+    }
+
+    .album-section::before {
+        content: "";
+        background: url(https://cdx.monstercat.com?encoding=webp&amp;url=https%3A%2F%2Fwww.monstercat.com%2Frelease%2FMCLP017%2Fcover%3F2ee434f2-4499-4c30-a937-4aec2b4ac1fc&amp;width=1024);
+        background-repeat: no-repeat;
+        background-size: 110%;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0.2;
+        background-position: center;
+    }
+
+    .stream-section,
+    .track-list-section,
+    .other-releases-section, 
+    footer {
+        width: var(--width);
+        margin: 0 auto;
+    }
+
+    .other-releases-section {
+        margin-bottom: 72px;
+    }
+
+    .footer-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 0;
+    }
+
+    .footer-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: flex-start;
+        border-top: 2px solid;
+        padding: 40px 0;
+        border-bottom: 2px solid;
+    }
+
+    
+
+    .acknowledge-container p:nth-of-type(1) {
+        margin: 20px 0;
+    }
+}
+
+@media (min-width: 1500px){
+    .album-section::before {
+        background-size: 100%;
+    }
+}
