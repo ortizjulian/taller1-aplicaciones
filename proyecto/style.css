@@ -14,7 +14,13 @@
 body {
     background: #000;
     color: var(--white);
-    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-stroke{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #F1F1F1;
+    -webkit-text-fill-color: transparent;
 }
 
 .stream-section,
@@ -88,23 +94,22 @@ body {
 
 .fade-block{
     
-        width: 100%; /* Ancho del elemento, ajusta según tus necesidades */
-        height: 100vh; /* Altura del elemento, ajusta según tus necesidades */
-        background-image: url('imagen.jpg'); /* Puedes establecer una imagen de fondo si lo deseas */
-        background-size: cover; /* Ajusta según tus necesidades */
-        position: relative; /* Ajusta según tus necesidades */
+        width: 100%; 
+        height: 100vh; 
+        background-image: url('imagen.jpg'); 
+        background-size: cover; 
+        position: relative; 
     
-        /* Filtro de desenfoque */
-        backdrop-filter: blur(10px); /* Ajusta el valor según tus necesidades */
+        
+        backdrop-filter: blur(10px); 
     
-        /* Filtro de desenfoque para navegadores que no admiten backdrop-filter */
-        filter: blur(10px); /* Ajusta el valor según tus necesidades */
-    
-        /* Otras propiedades para centrar el contenido o ajustar el diseño */
+        
+        filter: blur(10px); 
+        
         display: flex;
         align-items: center;
         justify-content: center;
-        color: white; /* Ajusta según tus necesidades */
+        color: white; 
     
 }
 
@@ -282,6 +287,7 @@ i {
     background: #000;
     color: var(--white);
     z-index: 99;
+    align-content: space-between;
 }
 
 .side-panel-flex {
@@ -309,10 +315,11 @@ i {
 
 .side-panel-links {
     padding: 50px 40px;
-    height: 325px;
+    height: 500px;
     line-height: 2.5;
-    overflow-y: scroll;
+    overflow-y: visible;
     font-size: 24px;
+    
 }
 
 .side-panel-icons-row {
@@ -321,6 +328,7 @@ i {
     justify-content: space-evenly;
     padding: 100px 100px 100px 20px;
     align-items: center;
+    margin-top: 90px;
 }
 
 .side-panel-sign-in {
@@ -357,9 +365,9 @@ i {
 }
 
 
-.open {
+ .open {
     display: block;
-}
+} 
 
 .stop-scrolling {
     overflow: hidden;
@@ -379,6 +387,15 @@ i {
         text-transform: uppercase;
         font-weight: bold;
         margin: 10px 0;
+        font-family: "Monument Extended", "Helvetica", Arial, sans-serif;
+        line-height: 1;
+    }
+
+    .h-normal{
+        
+        font-family: "Monument Extended", "Helvetica", Arial, sans-serif;
+        font-size: 2em;
+        
     }
 
     .nav-logo {
@@ -404,7 +421,7 @@ i {
 
     .vertical-on-desktop {
         position: absolute;
-        left: -120%;
+        left: -123%;
         bottom: 10%;
         transform: rotate(-90deg);
         margin-bottom: 20px;
