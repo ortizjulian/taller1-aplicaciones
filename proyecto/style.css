@@ -17,6 +17,50 @@ body {
     
 }
 
+.stream-section,
+.track-list-section,
+.other-releases-section
+    footer {
+        width: var(--width);
+        margin: 0 auto;
+    }
+
+.other-releases-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.other-releases-image {
+    width: 200px;
+    margin: 20px 0;
+}
+
+.table {
+    font-size: 18px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-flex {
+    display: flex;
+    align-items: center;
+}
+
+.table-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100px;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.other-releases-section {
+    margin-bottom: 72px;
+}
+
 .background-poster{
     width: 102%;
     height: 102%;
@@ -64,6 +108,33 @@ body {
     
 }
 
+.flex-track-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .flex-track {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-bottom: 1px solid black;
+  }
+  
+  .number {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .title {
+    font-size: 16px;
+  }
+  
+  .artist {
+    font-size: 14px;
+  }
 
 a {
     text-decoration: none;
